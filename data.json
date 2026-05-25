@@ -1,8 +1,10 @@
 {
-  "chapters": [
+  "chapters":
+  [
     {
       "number": 1,
-      "slokas": [
+      "slokas": 
+      [
         {
           "label": "1",
           "english": "Bg snippet chap1 brief in english.m4a"
@@ -85,5 +87,44 @@
         { "label": "64 to 72", "english": "Bg snippet ch2 summary 64 to 72 english.m4a" }
       ]
     }
+   {
+  "number": 3,
+  "slokas": [
+    { "label": "1", "english": "Bg snippet ch3 sloka 1 english.m4a" },
+    { "label": "2", "english": "Bg snippet ch3 sloka 2 english.m4a" },
+    { "label": "3", "english": "Bg snippet ch3 sloka 3 english.m4a" },
+    { "label": "4", "english": "Bg snippet ch3 sloka 4 english.m4a" },
+    { "label": "5", "english": "Bg snippet ch3 sloka 5 english.m4a" },
+    { "label": "6,7", "english": "Bg snippet ch3 sloka 6,7 english.m4a" },
+    { "label": "8", "english": "Bg snippet ch3 sloka 8 english.m4a" },
+    { "label": "9", "english": "Bg snippet ch3 sloka 9 english.m4a" },
+    { "label": "10", "english": "Bg snippet ch3 sloka 10 english.m4a" },
+    { "label": "11", "english": "Bg snippet ch3 sloka 11 english.m4a" },
+    { "label": "12", "english": "Bg snippet ch3 sloka 12 english.m4a" },
+    { "label": "13", "english": "Bg snippet ch3 sloka 13 english.m4a" },
+    { "label": "14,15,16", "english": "Bg snippet ch3 sloka 14,15,16 english.m4a" },
+    { "label": "17", "english": "Bg snippet ch3 sloka 17 english.m4a" },
+    { "label": "18,19", "english": "Bg snippet ch3 sloka 18,19 english.m4a" },
+    { "label": "20", "english": "Bg snippet ch3 sloka 20 english.m4a" },
+    { "label": "21,22", "english": "Bg snippet ch3 sloka 21, 22 english.m4a" },
+    { "label": "23,24", "english": "Bg snippet ch3 sloka 23,24 english.m4a" },
+    { "label": "25,26", "english": "Bg snippet ch3 sloka 25,26 english.m4a" },
+    { "label": "27", "english": "Bg snippet ch3 sloka 27 english.m4a" },
+    { "label": "28,29", "english": "Bg snippet ch3 sloka 28,29 english.m4a" },
+    { "label": "30", "english": "Bg snippet ch3 sloka 30 english.m4a" },
+    { "label": "31", "english": "Bg snippet ch3 sloka 31 english.m4a" },
+    { "label": "32", "english": "Bg snippet ch3 sloka 32 english.m4a" },
+    { "label": "33", "english": "Bg snippet ch3 sloka 33 english.m4a" },
+    { "label": "34", "english": "Bg snippet ch3 sloka 34 english.m4a" },
+    { "label": "35", "english": "Bg snippet ch3 sloka 35 english.m4a" },
+    { "label": "36", "english": "Bg snippet ch3 sloka 36 english.m4a" },
+    { "label": "37", "english": "Bg snippet ch3 sloka 37 english.m4a" },
+    { "label": "38", "english": "Bg snippet ch3 sloka 38 english.m4a" },
+    { "label": "39", "english": "Bg snippet ch3 sloka 39 english.m4a" },
+    { "label": "40,41", "english": "Bg snippet ch3 sloka 40,41 english.m4a" },
+    { "label": "42", "english": "Bg snippet ch3 sloka 42 english.m4a" },
+    { "label": "43", "english": "Bg snippet ch3 sloka 43 english.m4a" }
+  ]
+}
   ]
 }
