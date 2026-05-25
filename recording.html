@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
+<head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>5 Minute Recordings</title>
   <link href="style.css" rel="stylesheet"/>
- </head>
- <body>
-  
+</head>
+<body>
+
   <h2 id="chapter-title"></h2>
   <div id="container"></div>
 
   <script>
+    // Pause all other audio players when one starts playing
+    document.addEventListener('play', function (e) {
+      if (e.target.tagName === 'AUDIO') {
+        document.querySelectorAll('audio').forEach(audio => {
+          if (audio !== e.target) {
+            audio.pause();
+          }
+        });
+      }
+    }, true);
+
     const baseURL = "https://archive.org/download/bg-snippet-chap-1-brief-english.m-4a/";
 
     fetch('data.json')
@@ -28,15 +39,21 @@
         chapter.slokas.forEach(sloka => {
           const div = document.createElement('div');
           div.className = 'lecture-card';
+
           div.innerHTML = `
             <h3>Sloka ${sloka.label}</h3>
             <audio controls>
               <source src="${baseURL + encodeURIComponent(sloka.english)}" type="audio/mp4">
             </audio>
           `;
+
           container.appendChild(div);
         });
+      })
+      .catch(error => {
+        console.error('Error loading data:', error);
       });
   </script>
- </body>
+
+</body>
 </html>
