@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>5 Minute Recordings</title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <h1>5 Minute Snippets</h1>
+  <h2 id="chapter-title"></h2>
+  <div id="container"></div>
+
+  <script>
+    const baseURL = "https://archive.org/download/bg-snippet-chap-1-brief-english.m-4a/";
+
+    fetch('data.json')
+      .then(res => res.json())
+      .then(data => {
+        const params = new URLSearchParams(window.location.search);
+        const chNum = parseInt(params.get('chapter'));
+        const chapter = data.chapters.find(c => c.number === chNum);
+
+        document.getElementById('chapter-title').innerText = 'Chapter ' + chNum;
+
+        const container = document.getElementById('container');
+
+        chapter.slokas.forEach(sloka => {
+          const div = document.createElement('div');
+          div.className = 'lecture-card';
+          div.innerHTML = `
+            <h3>Sloka ${sloka.label}</h3>
+            <audio controls>
+              <source src="${baseURL + encodeURIComponent(sloka.english)}" type="audio/mp4">
+            </audio>
+          `;
+          container.appendChild(div);
+        });
+      });
+  </script>
+ </body>
+</html>

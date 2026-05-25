@@ -1,0 +1,89 @@
+{
+  "chapters": [
+    {
+      "number": 1,
+      "slokas": [
+        {
+          "label": "1",
+          "english": "Bg snippet chap1 brief in english.m4a"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "slokas": [
+        { "label": "1,2", "english": "Bg snippet ch2 sloka 1,2 english.m4a" },
+        { "label": "3,4,5", "english": "Bg snippet ch2 sloka 3,4,5 english.m4a" },
+        { "label": "6,7", "english": "Bg snippet ch2 sloka 6,7 english.m4a" },
+        { "label": "8,9", "english": "Bg snippet ch2 sloka 8,9 english.m4a" },
+        { "label": "10,11", "english": "Bg snippet ch2 sloka 10,11 english.m4a" },
+        { "label": "12", "english": "Bg snippet ch2 sloka 12 english.m4a" },
+        { "label": "13", "english": "Bg snippet ch2 sloka 13 english.m4a" },
+        { "label": "14", "english": "Bg snippet ch2 sloka 14 english.m4a" },
+        { "label": "15", "english": "Bg snippet ch2 sloka 15 english.m4a" },
+        { "label": "16", "english": "Bg snippet ch2 sloka 16 english.m4a" },
+        { "label": "17", "english": "Bg snippet ch2 sloka 17 english.m4a" },
+        { "label": "18", "english": "Bg snippet ch2 sloka 18 english.m4a" },
+        { "label": "19", "english": "Bg snippet ch2 sloka 19 english.m4a" },
+        { "label": "20", "english": "Bg snippet ch2 sloka 20 english.m4a" },
+        { "label": "21", "english": "Bg snippet ch2 sloka 21 english.m4a" },
+        { "label": "22", "english": "Bg snippet ch2 sloka 22 english.m4a" },
+        { "label": "23", "english": "Bg snippet ch2 sloka 23 english.m4a" },
+        { "label": "24", "english": "Bg snippet ch2 sloka 24 english.m4a" },
+        { "label": "25", "english": "Bg snippet ch2 sloka 25 english.m4a" },
+        { "label": "26", "english": "Bg snippet ch2 sloka 26 english.m4a" },
+        { "label": "27", "english": "Bg snippet ch2 sloka 27 english.m4a" },
+        { "label": "28", "english": "Bg snippet ch2 sloka 28 english.m4a" },
+        { "label": "29", "english": "Bg snippet ch2 sloka 29 english.m4a" },
+        { "label": "30", "english": "Bg snippet ch2 sloka 30 english.m4a" },
+        { "label": "31", "english": "Bg snippet ch2 sloka 31 english.m4a" },
+        { "label": "32", "english": "Bg snippet ch2 sloka 32 english.m4a" },
+        { "label": "33", "english": "Bg snippet ch2 sloka 33 english.m4a" },
+        { "label": "34,35", "english": "Bg snippet ch2 sloka 34,35 english.m4a" },
+        { "label": "36,37", "english": "Bg snippet ch2 sloka 36,37 english.m4a" },
+        { "label": "38", "english": "Bg snippet ch2 sloka 38 english.m4a" },
+        { "label": "39", "english": "Bg snippet ch2 sloka 39 english.m4a" },
+        { "label": "40", "english": "Bg snippet ch2 sloka 40 english.m4a" },
+        { "label": "41", "english": "Bg snippet ch2 sloka 41 english.m4a" },
+        { "label": "42", "english": "Bg snippet ch2 sloka 42 english.m4a" },
+        { "label": "43", "english": "Bg snippet ch2 sloka 43 english.m4a" },
+        { "label": "44", "english": "Bg snippet ch2 sloka 44 english.m4a" },
+        { "label": "45", "english": "Bg snippet ch2 sloka 45 english.m4a" },
+        { "label": "46", "english": "Bg snippet ch2 sloka 46 english.m4a" },
+        { "label": "47", "english": "Bg snippet ch2 sloka 47 english.m4a" },
+        { "label": "48", "english": "Bg snippet ch2 sloka 48 english.m4a" },
+        { "label": "49", "english": "Bg snippet ch2 sloka 49 english.m4a" },
+        { "label": "50", "english": "Bg snippet ch2 sloka 50 english.m4a" },
+        { "label": "51", "english": "Bg snippet ch2 sloka 51 english.m4a" },
+        { "label": "52", "english": "Bg snippet ch2 sloka 52 english.m4a" },
+        { "label": "53,54", "english": "Bg snippet ch2 sloka 53,54 english.m4a" },
+        { "label": "55", "english": "Bg snippet ch2 sloka 55 english.m4a" },
+        { "label": "56", "english": "Bg snippet ch2 sloka 56 english.m4a" },
+        { "label": "57", "english": "Bg snippet ch2 sloka 57 english.m4a" },
+        { "label": "58", "english": "Bg snippet ch2 sloka 58 english.m4a" },
+        { "label": "59", "english": "Bg snippet ch2 sloka 59 english.m4a" },
+        { "label": "60", "english": "Bg snippet ch2 sloka 60 english.m4a" },
+        { "label": "61", "english": "Bg snippet ch2 sloka 61 english.m4a" },
+        { "label": "62,63", "english": "Bg snippet ch2 sloka 62,63 english.m4a" },
+        { "label": "64", "english": "Bg snippet ch2 sloka 64 english.m4a" },
+        { "label": "65", "english": "Bg snippet ch2 sloka 65 english.m4a" },
+        { "label": "66", "english": "Bg snippet ch2 sloka 66 english.m4a" },
+        { "label": "67", "english": "Bg snippet ch2 sloka 67 english.m4a" },
+        { "label": "68,69", "english": "Bg snippet ch2 sloka 68,69 english.m4a" },
+        { "label": "70", "english": "Bg snippet ch2 sloka 70 english.m4a" },
+        { "label": "71,72", "english": "Bg snippet ch2 sloka 71,72 english.m4a" }
+      ],
+      "summaries": [
+        { "label": "1 to 11", "english": "Bg snippet ch2 summary 1 to 11 english.m4a" },
+        { "label": "12 to 18", "english": "Bg snippet ch2 summary 12 to 18 english.m4a" },
+        { "label": "19 to 23", "english": "Bg snippet ch2 summary 19 to 23 english.m4a" },
+        { "label": "24 to 29", "english": "Bg snippet ch2 summary 24 to 29 english.m4a" },
+        { "label": "30 to 37", "english": "Bg snippet ch2 summary 30 to 37 english.m4a" },
+        { "label": "38 to 45", "english": "Bg snippet ch2 summary 38 to 45 english.m4a" },
+        { "label": "46 to 53", "english": "Bg snippet ch2 summary 46 to 53 english.m4a" },
+        { "label": "54 to 63", "english": "Bg snippet ch2 summary 54 to 63 english.m4a" },
+        { "label": "64 to 72", "english": "Bg snippet ch2 summary 64 to 72 english.m4a" }
+      ]
+    }
+  ]
+}
