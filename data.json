@@ -163,6 +163,38 @@
     { "label": "40", "english": "Bg snippet ch4 sloka 40 english.m4a" },
     { "label": "41,42", "english": "Bg snippet ch4 sloka 41,42 english.m4a" }
   ]
+},
+    {
+  "number": 5,
+  "slokas": [
+    { "label": "1", "english": "Bg snippet ch5 sloka 1 english.m4a" },
+    { "label": "2,3", "english": "Bg snippet ch5 sloka 2,3 english.m4a" },
+    { "label": "4", "english": "Bg snippet ch5 sloka 4 english.m4a" },
+    { "label": "5,6", "english": "Bg snippet ch5 sloka 5,6 english.m4a" },
+    { "label": "7", "english": "Bg snippet ch5 sloka 7 english.m4a" },
+    { "label": "8,9", "english": "Bg snippet ch5 sloka 8,9 english.m4a" },
+    { "label": "10", "english": "Bg snippet ch5 sloka 10 english.m4a" },
+    { "label": "11,12", "english": "Bg snippet ch5 sloka 11,12 english.m4a" },
+    { "label": "13", "english": "Bg snippet ch5 sloka 13 english.m4a" },
+    { "label": "14", "english": "Bg snippet ch5 sloka 14 english.m4a" },
+    { "label": "15", "english": "Bg snippet ch5 sloka 15 english.m4a" },
+    { "label": "16", "english": "Bg snippet ch5 sloka 16 english.m4a" },
+    { "label": "17", "english": "Bg snippet ch5 sloka 17 english.m4a" },
+    { "label": "18", "english": "Bg snippet ch5 sloka 18 english.m4a" },
+    { "label": "19", "english": "Bg snippet ch5 sloka 19 english.m4a" },
+    { "label": "20,21", "english": "Bg snippet ch5 sloka 20,21 english.m4a" },
+    { "label": "22", "english": "Bg snippet ch5 sloka 22 english.m4a" },
+    { "label": "23", "english": "Bg snippet ch5 sloka 23 english.m4a" },
+    { "label": "24", "english": "Bg snippet ch5 sloka 24 english.m4a" },
+    { "label": "25,26", "english": "Bg snippet ch5 sloka 25,26 english.m4a" },
+    { "label": "27,28", "english": "Bg snippet ch5 sloka 27,28 english.m4a" },
+    { "label": "29", "english": "Bg snippet ch5 sloka 29 english.m4a" }
+  ],
+  "summaries": [
+    { "label": "1-10", "english": "Bg snippet ch5 summary 1-10 english.m4a" },
+    { "label": "11-20", "english": "Bg snippet ch5 summary 11-20 english.m4a" },
+    { "label": "21-29", "english": "Bg snippet ch5 summary 21-29 english.m4a" }
+  ]
 }
   ]
 }
