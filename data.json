@@ -16,8 +16,8 @@
       "number": 2,
       "slokas": [
         { "label": "1,2", "english": "Bg snippet ch2 sloka 1,2 english.m4a","tamil": "Bg snippet ch2 sloka1,2 tamil.m4a" },
-        { "label": "3,4,5", "english": "Bg snippet ch2 sloka 3,4,5 eng.m4a" },
-        { "label": "6,7", "english": "Bg snippet ch2 sloka 6,7 english.m4a" },
+        { "label": "3,4,5", "english": "Bg snippet ch2 sloka 3,4,5 eng.m4a","tamil": "Bg snippet ch2 sloka 3,4,5 tamil.m4a"},
+        { "label": "6,7", "english": "Bg snippet ch2 sloka 6,7 english.m4a","tamil": "Bg snippet ch2 sloka 6,7 tamil.m4a" },
         { "label": "8,9", "english": "Bg snippet ch2 sloka 8,9 english.m4a" },
         { "label": "10,11", "english": "Bg snippet ch2 sloka 10,11 english.m4a" },
         { "label": "12", "english": "Bg snippet ch2 sloka 12 english.m4a" },
