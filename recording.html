@@ -9,7 +9,7 @@
 <body>
 
   <h2 id="chapter-title"></h2>
-  <h2>English</h2>
+ 
   <div id="container"></div>
 
   <script>
@@ -38,18 +38,24 @@
         const container = document.getElementById('container');
 
         chapter.slokas.forEach(sloka => {
-          const div = document.createElement('div');
-          div.className = 'lecture-card';
-
-          div.innerHTML = `
-            <h3>Sloka ${sloka.label}</h3>
-            <audio controls>
-              <source src="${baseURL + encodeURIComponent(sloka.english)}" type="audio/mp4">
-            </audio>
-          `;
-
-          container.appendChild(div);
-        });
+  const div = document.createElement('div');
+  div.className = 'lecture-container';
+  div.innerHTML = `
+    <div class="lecture-card">
+      <h3>Sloka ${sloka.label} - English</h3>
+      <audio controls>
+        <source src="${baseURL + encodeURIComponent(sloka.english)}" type="audio/mp4">
+      </audio>
+    </div>
+    <div class="lecture-card">
+      <h3>Sloka ${sloka.label} - Tamil</h3>
+      <audio controls>
+        <source src="${baseURL + encodeURIComponent(sloka.tamil)}" type="audio/mp4">
+      </audio>
+    </div>
+  `;
+  container.appendChild(div);
+});
       })
       .catch(error => {
         console.error('Error loading data:', error);
