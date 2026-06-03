@@ -26,3 +26,79 @@ h1 {
 .lecture-card {
     width: 45%;
 }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5C3D2E;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+}
+
+.nav-title {
+    color: #FDF6EC;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+}
+
+.nav-links a {
+    color: #FDF6EC;
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    color: #D4A853;
+}
+
+.section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.note-box {
+    background: white;
+    border-left: 4px solid #5C3D2E;
+    padding: 20px 25px;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2C2C2C;
+}
+
+.card-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.text-card {
+    width: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+    background: white;
+    text-align: center;
+}
+
+.text-card:hover {
+    transform: translateY(-5px);
+}
+
+.text-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.text-card h3 {
+    padding: 12px;
+    margin: 0;
+    font-size: 1rem;
+}
