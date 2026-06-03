@@ -12,51 +12,76 @@
  
   <div id="container"></div>
 
-  <script>
-    // Pause all other audio players when one starts playing
-    document.addEventListener('play', function (e) {
-      if (e.target.tagName === 'AUDIO') {
-        document.querySelectorAll('audio').forEach(audio => {
-          if (audio !== e.target) {
-            audio.pause();
-          }
+<script>
+  document.addEventListener('play', function (e) {
+    if (e.target.tagName === 'AUDIO') {
+      document.querySelectorAll('audio').forEach(audio => {
+        if (audio !== e.target) audio.pause();
+      });
+    }
+  }, true);
+
+  const baseURL = "https://pub-1d0374a050c547f9887ff5b729f12594.r2.dev/";
+
+  function loadAudio(button, src) {
+    const audio = document.createElement('audio');
+    audio.controls = true;
+    audio.innerHTML = `<source src="${src}" type="audio/mp4">`;
+    button.replaceWith(audio);
+    audio.play();
+  }
+
+  fetch('data.json')
+    .then(res => res.json())
+    .then(data => {
+      const params = new URLSearchParams(window.location.search);
+      const chNum = parseInt(params.get('chapter'));
+      const chapter = data.chapters.find(c => c.number === chNum);
+      document.getElementById('chapter-title').innerText = 'Chapter ' + chNum;
+      const container = document.getElementById('container');
+
+      chapter.slokas.forEach(sloka => {
+        const div = document.createElement('div');
+        div.className = 'lecture-container';
+        div.innerHTML = `
+          <div class="lecture-card">
+            <h3>Sloka ${sloka.label} - English</h3>
+            <button class="play-btn" onclick="loadAudio(this, '${baseURL + encodeURIComponent(sloka.english)}')">▶ Play</button>
+          </div>
+          <div class="lecture-card">
+            <h3>Sloka ${sloka.label} - Tamil</h3>
+            <button class="play-btn" onclick="loadAudio(this, '${baseURL + encodeURIComponent(sloka.tamil)}')">▶ Play</button>
+          </div>
+        `;
+        container.appendChild(div);
+      });
+
+      if (chapter.summaries) {
+        const summaryHeading = document.createElement('h3');
+        summaryHeading.innerText = 'Summaries';
+        container.appendChild(summaryHeading);
+
+        chapter.summaries.forEach(summary => {
+          const div = document.createElement('div');
+          div.className = 'lecture-container';
+          div.innerHTML = `
+            <div class="lecture-card">
+              <h4>Summary ${summary.label} - English</h4>
+              <button class="play-btn" onclick="loadAudio(this, '${baseURL + encodeURIComponent(summary.english)}')">▶ Play</button>
+            </div>
+            <div class="lecture-card">
+              <h4>Summary ${summary.label} - Tamil</h4>
+              <button class="play-btn" onclick="loadAudio(this, '${baseURL + encodeURIComponent(summary.tamil)}')">▶ Play</button>
+            </div>
+          `;
+          container.appendChild(div);
         });
       }
-    }, true);
-
-    const baseURL = "https://pub-1d0374a050c547f9887ff5b729f12594.r2.dev";
-
-    fetch('data.json')
-      .then(res => res.json())
-      .then(data => {
-        const params = new URLSearchParams(window.location.search);
-        const chNum = parseInt(params.get('chapter'));
-        const chapter = data.chapters.find(c => c.number === chNum);
-
-        document.getElementById('chapter-title').innerText = 'Chapter ' + chNum;
-
-        const container = document.getElementById('container');
-
-        chapter.slokas.forEach(sloka => {
-  const div = document.createElement('div');
-  div.className = 'lecture-container';
-  div.innerHTML = `
-    <div class="lecture-card">
-      <h3>Sloka ${sloka.label} - English</h3>
-      <button class="play-btn" onclick="loadAudio(this, '${baseURL + encodeURIComponent(sloka.english)}')">▶ Play</button>
-    </div>
-    <div class="lecture-card">
-      <h3>Sloka ${sloka.label} - Tamil</h3>
-      <button class="play-btn" onclick="loadAudio(this, '${baseURL + encodeURIComponent(sloka.tamil)}')">▶ Play</button>
-    </div>
-  `;
-  container.appendChild(div);
-});
-      })
-      .catch(error => {
-        console.error('Error loading data:', error);
-      });
-  </script>
+    })
+    .catch(error => {
+      console.error('Error loading data:', error);
+    });
+</script>
 
 </body>
 </html>
