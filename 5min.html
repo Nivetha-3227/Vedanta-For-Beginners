@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" /> 
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>5 Minute Snippets</title>
   <link href="style.css" rel="stylesheet"/>
+  <style>
+    .tab-bar {
+      display: flex;
+      gap: 0;
+      margin: 1.5rem auto 2rem auto;
+      max-width: 600px;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 2px solid var(--accent, #b8860b);
+    }
+    .tab-btn {
+      flex: 1;
+      padding: 0.75rem 1rem;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--accent, #b8860b);
+      transition: background 0.2s, color 0.2s;
+    }
+    .tab-btn.active {
+      background: var(--accent, #b8860b);
+      color: #fff;
+    }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+  </style>
 </head>
 <body>
-
   <nav class="navbar">
     <div class="nav-title">Vedanta For Beginners</div>
     <div class="nav-links">
@@ -15,84 +42,77 @@
       <a href="index.html#lectures">Lectures</a>
     </div>
   </nav>
-
+ 
   <div class="section">
-    <h2>Bhagavad Gita — 5 Minute Snippets</h2>
-    <div class="chapter-grid">
-      <a href="recording.html?chapter=1" class="chapter-card">
-        <span class="chapter-num">01</span>
-        <span class="chapter-name">Arjuna Vishada Yoga</span>
-      </a>
-      <a href="recording.html?chapter=2" class="chapter-card">
-        <span class="chapter-num">02</span>
-        <span class="chapter-name">Sankhya Yoga</span>
-      </a>
-      <a href="recording.html?chapter=3" class="chapter-card">
-        <span class="chapter-num">03</span>
-        <span class="chapter-name">Karma Yoga</span>
-      </a>
-      <a href="recording.html?chapter=4" class="chapter-card">
-        <span class="chapter-num">04</span>
-        <span class="chapter-name">Jnana Karma Sanyasa Yoga</span>
-      </a>
-      <a href="recording.html?chapter=5" class="chapter-card">
-        <span class="chapter-num">05</span>
-        <span class="chapter-name">Karma Sanyasa Yoga</span>
-      </a>
-      <a href="recording.html?chapter=6" class="chapter-card">
-        <span class="chapter-num">06</span>
-        <span class="chapter-name">Dhyana Yoga</span>
-      </a>
-      <a href="recording.html?chapter=7" class="chapter-card">
-        <span class="chapter-num">07</span>
-        <span class="chapter-name">Jnana Vijnana Yoga</span>
-      </a>
-      <a href="recording.html?chapter=8" class="chapter-card">
-        <span class="chapter-num">08</span>
-        <span class="chapter-name">Aksara Brahma Yoga</span>
-      </a>
-      <a href="recording.html?chapter=9" class="chapter-card">
-        <span class="chapter-num">09</span>
-        <span class="chapter-name">Raja Vidya Raja Guhya Yoga</span>
-      </a>
-      <a href="recording.html?chapter=10" class="chapter-card">
-        <span class="chapter-num">10</span>
-        <span class="chapter-name">Vibhuti Yoga</span>
-      </a>
-      <a href="recording.html?chapter=11" class="chapter-card">
-        <span class="chapter-num">11</span>
-        <span class="chapter-name">Vishvarupa Darshana Yoga</span>
-      </a>
-      <a href="recording.html?chapter=12" class="chapter-card">
-        <span class="chapter-num">12</span>
-        <span class="chapter-name">Bhakti Yoga</span>
-      </a>
-      <a href="recording.html?chapter=13" class="chapter-card">
-        <span class="chapter-num">13</span>
-        <span class="chapter-name">Kshetra Kshetrajna Vibhaga Yoga</span>
-      </a>
-      <a href="recording.html?chapter=14" class="chapter-card">
-        <span class="chapter-num">14</span>
-        <span class="chapter-name">Gunatraya Vibhaga Yoga</span>
-      </a>
-      <a href="recording.html?chapter=15" class="chapter-card">
-        <span class="chapter-num">15</span>
-        <span class="chapter-name">Purushottama Yoga</span>
-      </a>
-      <a href="recording.html?chapter=16" class="chapter-card">
-        <span class="chapter-num">16</span>
-        <span class="chapter-name">Daivasura Sampad Vibhaga Yoga</span>
-      </a>
-      <a href="recording.html?chapter=17" class="chapter-card">
-        <span class="chapter-num">17</span>
-        <span class="chapter-name">Shraddhatraya Vibhaga Yoga</span>
-      </a>
-      <a href="recording.html?chapter=18" class="chapter-card">
-        <span class="chapter-num">18</span>
-        <span class="chapter-name">Moksha Sanyasa Yoga</span>
-      </a>
+    <div class="tab-bar">
+      <button class="tab-btn active" onclick="switchTab('gita')">Bhagavad Gita</button>
+      <button class="tab-btn" onclick="switchTab('sl')">Soundarya Lahari</button>
+    </div>
+ 
+    <!-- BHAGAVAD GITA TAB -->
+    <div id="tab-gita" class="tab-panel active">
+      <h2>Bhagavad Gita — 5 Minute Snippets</h2>
+      <div class="chapter-grid">
+        <a href="recording.html?chapter=1" class="chapter-card"><span class="chapter-num">01</span><span class="chapter-name">Arjuna Vishada Yoga</span></a>
+        <a href="recording.html?chapter=2" class="chapter-card"><span class="chapter-num">02</span><span class="chapter-name">Sankhya Yoga</span></a>
+        <a href="recording.html?chapter=3" class="chapter-card"><span class="chapter-num">03</span><span class="chapter-name">Karma Yoga</span></a>
+        <a href="recording.html?chapter=4" class="chapter-card"><span class="chapter-num">04</span><span class="chapter-name">Jnana Karma Sanyasa Yoga</span></a>
+        <a href="recording.html?chapter=5" class="chapter-card"><span class="chapter-num">05</span><span class="chapter-name">Karma Sanyasa Yoga</span></a>
+        <a href="recording.html?chapter=6" class="chapter-card"><span class="chapter-num">06</span><span class="chapter-name">Dhyana Yoga</span></a>
+        <a href="recording.html?chapter=7" class="chapter-card"><span class="chapter-num">07</span><span class="chapter-name">Jnana Vijnana Yoga</span></a>
+        <a href="recording.html?chapter=8" class="chapter-card"><span class="chapter-num">08</span><span class="chapter-name">Aksara Brahma Yoga</span></a>
+        <a href="recording.html?chapter=9" class="chapter-card"><span class="chapter-num">09</span><span class="chapter-name">Raja Vidya Raja Guhya Yoga</span></a>
+        <a href="recording.html?chapter=10" class="chapter-card"><span class="chapter-num">10</span><span class="chapter-name">Vibhuti Yoga</span></a>
+        <a href="recording.html?chapter=11" class="chapter-card"><span class="chapter-num">11</span><span class="chapter-name">Vishvarupa Darshana Yoga</span></a>
+        <a href="recording.html?chapter=12" class="chapter-card"><span class="chapter-num">12</span><span class="chapter-name">Bhakti Yoga</span></a>
+        <a href="recording.html?chapter=13" class="chapter-card"><span class="chapter-num">13</span><span class="chapter-name">Kshetra Kshetrajna Vibhaga Yoga</span></a>
+        <a href="recording.html?chapter=14" class="chapter-card"><span class="chapter-num">14</span><span class="chapter-name">Gunatraya Vibhaga Yoga</span></a>
+        <a href="recording.html?chapter=15" class="chapter-card"><span class="chapter-num">15</span><span class="chapter-name">Purushottama Yoga</span></a>
+        <a href="recording.html?chapter=16" class="chapter-card"><span class="chapter-num">16</span><span class="chapter-name">Daivasura Sampad Vibhaga Yoga</span></a>
+        <a href="recording.html?chapter=17" class="chapter-card"><span class="chapter-num">17</span><span class="chapter-name">Shraddhatraya Vibhaga Yoga</span></a>
+        <a href="recording.html?chapter=18" class="chapter-card"><span class="chapter-num">18</span><span class="chapter-name">Moksha Sanyasa Yoga</span></a>
+      </div>
+    </div>
+ 
+    <!-- SOUNDARYA LAHARI TAB -->
+    <div id="tab-sl" class="tab-panel">
+      <h2>Soundarya Lahari — Slokas</h2>
+      <div class="chapter-grid" id="sl-grid">
+        <!-- filled by JS -->
+      </div>
     </div>
   </div>
-
+ 
+  <script>
+    function switchTab(tab) {
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('tab-' + tab).classList.add('active');
+      document.querySelectorAll('.tab-btn')[tab === 'gita' ? 0 : 1].classList.add('active');
+      if (tab === 'sl') loadSL();
+    }
+ 
+    let slLoaded = false;
+    function loadSL() {
+      if (slLoaded) return;
+      slLoaded = true;
+      fetch('soundaryalahari.json')
+        .then(r => r.json())
+        .then(data => {
+          const grid = document.getElementById('sl-grid');
+          data.slokas.forEach(s => {
+            const a = document.createElement('a');
+            a.href = 'recording.html?sl=' + s.number;
+            a.className = 'chapter-card';
+            a.innerHTML = `<span class="chapter-num">${String(s.number).padStart(2,'0')}</span><span class="chapter-name">Sloka ${s.label}</span>`;
+            grid.appendChild(a);
+          });
+        })
+        .catch(e => console.error('Error loading soundaryalahari.json:', e));
+    }
+ 
+    // restore active tab from URL hash if present
+    if (window.location.hash === '#sl') switchTab('sl');
+  </script>
 </body>
 </html>
