@@ -140,3 +140,11 @@ h1 {
     color: #5C3D2E;
     margin-top: 8px;
 }
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid #D4A853;
+  font-size: 0.85rem;
+  color: #5C3D2E;
+}
