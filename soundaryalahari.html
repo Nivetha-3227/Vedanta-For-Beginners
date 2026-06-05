@@ -42,10 +42,6 @@
           div.className = 'lecture-container';
           div.innerHTML = `
             <div class="lecture-card">
-              <h3>Sloka ${sloka.label} - English</h3>
-              <button class="play-btn" onclick="loadAudio(this, '${baseURL + encodeURIComponent(sloka.english)}')">▶ Play</button>
-            </div>
-            <div class="lecture-card">
               <h3>Sloka ${sloka.label} - Tamil</h3>
               <button class="play-btn" onclick="loadAudio(this, '${baseURL + encodeURIComponent(sloka.tamil)}')">▶ Play</button>
             </div>
