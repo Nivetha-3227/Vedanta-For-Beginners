@@ -22,6 +22,15 @@
   </div>
 
   <script>
+    document.addEventListener('play', function(e) {
+  if (e.target.tagName === 'AUDIO') {
+    document.querySelectorAll('audio').forEach(audio => {
+      if (audio !== e.target) {
+        audio.pause();
+      }
+    });
+  }
+}, true);
     const baseURL = "https://pub-1d0374a050c547f9887ff5b729f12594.r2.dev/";
 
     function loadAudio(button, src) {
