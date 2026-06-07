@@ -296,5 +296,23 @@
     { "label": "99", "tamil": "SL 99.m4a" },
     { "label": "100", "tamil": "SL 100.m4a" }
   ]
+},
+  "tattvabodha": {
+  "lectures": [
+    { "label": "1", "file": "Tattvabodha 1.m4a" },
+    { "label": "2", "file": "Tattvabodha 2.m4a" },
+    { "label": "3", "file": "Tattvabodha 3.m4a" },
+    { "label": "4", "file": "Tattvabodha 4.m4a" },
+    { "label": "5", "file": "Tattvabodha 5.m4a" },
+    { "label": "6", "file": "Tattvabodha 6.m4a" },
+    { "label": "7", "file": "Tattvabodha 7.m4a" },
+    { "label": "8", "file": "Tattvabodha 8.m4a" },
+    { "label": "9", "file": "Tattvabodha 9.m4a" },
+    { "label": "10", "file": "Tattvabodha 10.m4a" },
+    { "label": "11", "file": "Tattvabodha 11.m4a" },
+    { "label": "12", "file": "Tattvabodha 12.m4a" },
+    { "label": "13", "file": "Tattvabodha 13.m4a" },
+    { "label": "14", "file": "Tattvabodha 14.m4a" }
+  ]
 }
 }
