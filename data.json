@@ -337,5 +337,14 @@
     { "label": "18", "file": "Friday Atma bodha 18.m4a" },
     { "label": "19", "file": "Friday atma bodha 19.m4a" }
   ]
+},
+  "sadhanapanchakam": {
+  "lectures": [
+    { "label": "1", "file": "Sadhana panchakam 1.m4a" },
+    { "label": "2", "file": "Sadhana panchakam 2.m4a" },
+    { "label": "3", "file": "Sadhana panchakam 3.m4a" },
+    { "label": "4", "file": "Sadhana panchakam 4.m4a" },
+    { "label": "5", "file": "Sadhana panchakam 5.m4a" }
+  ]
 }
 }
