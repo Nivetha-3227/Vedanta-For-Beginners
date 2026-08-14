@@ -17,7 +17,7 @@
   </nav>
 
   <div class="section">
-    <h2>Mooka panchashathi</h2>
+    <h2>Mooka Panchashathi</h2>
     <div id="container"></div>
   </div>
 
@@ -49,11 +49,11 @@
       .then(data => {
         const container = document.getElementById('container');
 
-        data.lalithasahasranamam.lectures.forEach(lecture => {
+        data.tattvabodha.lectures.forEach(lecture => {
           const div = document.createElement('div');
           div.className = 'lecture-card';
           div.innerHTML = `
-            <h3>${lecture.label === 'Introduction' ? 'Introduction' : 'Nama ' + lecture.label}</h3>
+            <h3>Lecture ${lecture.label}</h3>
             <button class="play-btn" onclick="loadAudio(this, '${baseURL + encodeURIComponent(lecture.file)}')">▶ Play</button>
           `;
           container.appendChild(div);
