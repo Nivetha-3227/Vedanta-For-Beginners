@@ -346,5 +346,39 @@
     { "label": "4", "file": "Sadhana panchakam 4.m4a" },
     { "label": "5", "file": "Sadhana panchakam 5.m4a" }
   ]
+},
+  "lalithasahasranamam": {
+  "lectures": [
+    { "label": "Introduction", "file": "Lalitha sahasranamam introduct.m4a" },
+    { "label": "1-3", "file": "LS nama 1-3.m4a" },
+    { "label": "4-5", "file": "LS nama 4-5.m4a" },
+    { "label": "6-9", "file": "LS nama 6-9.m4a" },
+    { "label": "10-12", "file": "LS nama 10-12.m4a" },
+    { "label": "13,14", "file": "LS nama 13,14.m4a" },
+    { "label": "15,16,17", "file": "LS nama 15,16,17.m4a" },
+    { "label": "18,19,20", "file": "LS nama 18,19,20.m4a" },
+    { "label": "21,22,23", "file": "LS nama 21,22,23.m4a" },
+    { "label": "24,25,26", "file": "LS nama 24,25,26.m4a" },
+    { "label": "27,28", "file": "LS nama 27,28.m4a" },
+    { "label": "29-32", "file": "LS nama 29-32.m4a" },
+    { "label": "33 to 35", "file": "LS nama 33 to 35.m4a" },
+    { "label": "36 to 40", "file": "LS nama 36 to 40.m4a" },
+    { "label": "41 to 44", "file": "LS nama 41 to 44.m4a" },
+    { "label": "45 to 50", "file": "LS nama 45 to 50.m4a" },
+    { "label": "51-53", "file": "LS nama 51-53.m4a" },
+    { "label": "54,55", "file": "LS nama 54,55.m4a" },
+    { "label": "56 to 58", "file": "LS nama 56 to 58.m4a" },
+    { "label": "59 to 62", "file": "LS nama 59 to 62.m4a" },
+    { "label": "63,64", "file": "LS nama 63, 64.m4a" },
+    { "label": "65,66", "file": "LS nama 65,66.m4a" },
+    { "label": "67 to 69", "file": "LS nama 67 to 69.m4a" },
+    { "label": "70 to 72", "file": "LS nama 70 to 72.m4a" },
+    { "label": "73 to 76", "file": "LS nama 73 to 76.m4a" },
+    { "label": "77 to 80", "file": "LS nama 77 to 80.m4a" },
+    { "label": "81 to 84", "file": "LS nama 81 to 84.m4a" },
+    { "label": "85 to 89", "file": "LS nama 85 to 89.m4a" },
+    { "label": "90 to 93", "file": "LS nama 90 to 93.m4a" },
+    { "label": "94 to 98", "file": "LS nama 94 to 98.m4a" }
+  ]
 }
 }
