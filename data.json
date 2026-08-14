@@ -380,5 +380,14 @@
     { "label": "90 to 93", "file": "LS nama 90 to 93.m4a" },
     { "label": "94 to 98", "file": "LS nama 94 to 98.m4a" }
   ]
-}
+},
+  "mookapanchashathi":{
+    "lectures":[
+      {"label":"1,2","file": "Mooka panchasathi arya sloka 1,2.m4a"},
+      {"label":"3,4,5","file": "Mooka panchasathi arya sloka 3,4,5.m4a"},
+      {"label":"6,7","file": "Mooka panchasathi arya sloka 6,7.m4a"},
+      {"label":"8,9","file": "Mooka panchasathi arya sloka 8,9.m4a"},
+      {"label":"10,11","file": "Mooka panchasathi arya sloka 10,11.m4a"}
+    ]
+  }
 }
