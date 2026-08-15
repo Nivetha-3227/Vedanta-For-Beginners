@@ -15,6 +15,7 @@
     {
       "number": 2,
       "slokas": [
+        {"label": "Intro to bodies", "english": "Bg snippet intro to bodies english.m4a","tamil": "Bg snippet intro to bodies tamil.m4a"},
         { "label": "1,2", "english": "Bg snippet ch2 sloka 1,2 english.m4a","tamil": "Bg snippet ch2 sloka1,2 tamil.m4a" },
         { "label": "3,4,5", "english": "Bg snippet ch2 sloka 3,4,5 eng.m4a","tamil": "Bg snippet ch2 sloka 3,4,5 tamil.m4a"},
         { "label": "6,7", "english": "Bg snippet ch2 sloka 6,7 english.m4a","tamil": "Bg snippet ch2 sloka 6,7 tamil.m4a" },
