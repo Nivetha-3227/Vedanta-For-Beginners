@@ -390,5 +390,19 @@
       {"label":"8,9","file": "Mooka panchasathi arya sloka 8,9.m4a"},
       {"label":"10,11","file": "Mooka panchasathi arya sloka 10,11.m4a"}
     ]
-  }
+  },
+  "narayaneeyam": {
+  "dasakams": [
+    {
+      "number": 1,
+      "slokas": [
+        { "label": "1", "english": "Narayaneeyam d1 sloka1.m4a" },
+        { "label": "2,3", "english": "Narayaneeyam d1 sloka 2,3.m4a" },
+        { "label": "4", "english": "Narayaneeyam d1 sloka 4.m4a" },
+        { "label": "5", "english": "Narayaneeyam d1 sloka 5.m4a" },
+        { "label": "6", "english": "Narayaneeyam d1 sloka 6.m4a" }
+      ]
+    }
+  ]
+}
 }
