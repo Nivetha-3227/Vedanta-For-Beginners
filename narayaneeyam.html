@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Narayaneeyam</title>
+  <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-title">Vedanta For Beginners</div>
+    <div class="nav-links">
+      <a href="index.html#dashboard">Dashboard</a>
+      <a href="index.html#lectures">Lectures</a>
+    </div>
+  </nav>
+
+  <div class="section">
+    <h2>Narayaneeyam</h2>
+    <div id="container"></div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2024 Vedanta For Beginners. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const baseURL = "https://pub-1d0374a050c547f9887ff5b729f12594.r2.dev/";
+
+    function loadAudio(button, src) {
+      const audio = document.createElement('audio');
+      audio.controls = true;
+      audio.innerHTML = `<source src="${src}" type="audio/mp4">`;
+      button.replaceWith(audio);
+      audio.play();
+    }
+
+    document.addEventListener('play', function(e) {
+      if (e.target.tagName === 'AUDIO') {
+        document.querySelectorAll('audio').forEach(audio => {
+          if (audio !== e.target) audio.pause();
+        });
+      }
+    }, true);
+
+    fetch('data.json')
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('container');
+
+        data.narayaneeyam.dasakams.forEach(dasakam => {
+          const heading = document.createElement('h3');
+          heading.innerText = 'Dasakam ' + dasakam.number;
+          container.appendChild(heading);
+
+          dasakam.slokas.forEach(sloka => {
+            const div = document.createElement('div');
+            div.className = 'lecture-card';
+            div.innerHTML = `
+              <h4>Sloka ${sloka.label}</h4>
+              <button class="play-btn" onclick="loadAudio(this, '${baseURL + encodeURIComponent(sloka.english)}')">▶ Play</button>
+            `;
+            container.appendChild(div);
+          });
+        });
+      })
+      .catch(error => {
+        console.error('Error loading data:', error);
+      });
+  </script>
+
+</body>
+</html>
