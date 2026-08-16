@@ -404,5 +404,20 @@
       ]
     }
   ]
+},
+  "hastamalakeeyam": {
+  "lectures": [
+    { "label": "Introduction", "file": "Hastamalakeeyam Intro.m4a" },
+    { "label": "1", "file": "Hastamalakeeyam 1.m4a" },
+    { "label": "2", "file": "Hastamalakeeyam 2.m4a" },
+    { "label": "3", "file": "Hastamalakeeyam 3.m4a" },
+    { "label": "4", "file": "Hastamalakeeyam 4.m4a" },
+    { "label": "5", "file": "Hastamalakeeyam 5.m4a" },
+    { "label": "6", "file": "Hastamalakeeyam 6.m4a" },
+    { "label": "7", "file": "Hastamalakeeyam 7.m4a" },
+    { "label": "8", "file": "Hastamalakeeyam 8.m4a" },
+    { "label": "9,10", "file": "Hastamalakeeyam 9,10.m4a" },
+    { "label": "11,12", "file": "Hastamalakeeyam 11,12.m4a" }
+  ]
 }
 }
